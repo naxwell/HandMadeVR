@@ -954,6 +954,7 @@ MonoBehaviour:
   m_AttachPointCompatibilityMode: 0
   secondHandGrabPoints:
   - {fileID: 1670088973}
+  twoHandRotationType: 2
 --- !u!65 &68354822
 BoxCollider:
   m_ObjectHideFlags: 0

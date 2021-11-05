@@ -9,7 +9,14 @@ public class twoHandedGrab : XRGrabInteractable
     public List<XRSimpleInteractable> secondHandGrabPoints = new List<XRSimpleInteractable>();
 
     private XRBaseInteractor secondInteractor;
+    private Quaternion attachInitRot;
+    public enum TwoHandRotationType { None, First, Second };
+    public TwoHandRotationType twoHandRotationType;
 
+    private float initDist;
+    private float dropDist;
+    public GameObject firstHand;
+    public GameObject secondHand;
 
 
     [System.Obsolete]
@@ -36,31 +43,64 @@ public class twoHandedGrab : XRGrabInteractable
 
         if (secondInteractor && selectingInteractor)
         {
-            selectingInteractor.attachTransform.rotation = Quaternion.LookRotation(secondInteractor.attachTransform.position - selectingInteractor.attachTransform.position);
+            selectingInteractor.attachTransform.rotation = GetTwoHandRotation();
         }
-
-
 
         base.ProcessInteractable(updatePhase);
 
+    }
+
+    private Quaternion GetTwoHandRotation()
+    {
+        Quaternion targetRotation;
+        if (twoHandRotationType == TwoHandRotationType.None)
+        {
+            targetRotation = Quaternion.LookRotation(secondInteractor.attachTransform.position - selectingInteractor.attachTransform.position);
+        }
+        else if (twoHandRotationType == TwoHandRotationType.First)
+        {
+            targetRotation = Quaternion.LookRotation(secondInteractor.attachTransform.position - selectingInteractor.attachTransform.position, selectingInteractor.attachTransform.up);
+        }
+        else
+        {
+            targetRotation = Quaternion.LookRotation(secondInteractor.attachTransform.position - selectingInteractor.attachTransform.position, secondInteractor.attachTransform.up);
+        }
+
+        return targetRotation;
+    }
+
+    private void GrowObject()
+    {
+        dropDist = Vector3.Distance(firstHand.transform.position, secondHand.transform.position);
+        float newScaleMod = dropDist / initDist;
+        Debug.Log(newScaleMod);
+        Vector3 newScale = new Vector3(transform.localScale.x + newScaleMod, transform.localScale.y + newScaleMod, transform.localScale.z + newScaleMod);
+        transform.localScale = transform.localScale * newScaleMod;
     }
 
     public void OnSecondHandGrab(XRBaseInteractor interactor)
     {
         Debug.Log("Second Hand Grabbed!");
         secondInteractor = interactor;
+        secondHand = interactor.gameObject;
+        initDist = Vector3.Distance(firstHand.transform.position, secondHand.transform.position);
+
     }
 
     public void OnSecondHandRelease(XRBaseInteractor interactor)
     {
         Debug.Log("Second Hand Released");
+        GrowObject();
         secondInteractor = null;
+
     }
 
     protected override void OnSelectEntered(SelectEnterEventArgs args)
     {
         Debug.Log("First Hand Grab");
         base.OnSelectEntered(args);
+        attachInitRot = args.interactor.attachTransform.localRotation;
+        firstHand = args.interactor.gameObject;
 
     }
 
@@ -69,6 +109,7 @@ public class twoHandedGrab : XRGrabInteractable
         Debug.Log("First Hand Released");
         base.OnSelectExited(args);
         secondInteractor = null;
+        args.interactor.attachTransform.localRotation = attachInitRot;
     }
 
 
