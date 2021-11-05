@@ -34,7 +34,12 @@ public class twoHandedGrab : XRGrabInteractable
     // Update is called once per frame
     void Update()
     {
+        if (secondInteractor != null)
+        {
+            GrowObject();
+            initDist = Vector3.Distance(firstHand.transform.position, secondHand.transform.position);
 
+        }
     }
 
     public override void ProcessInteractable(XRInteractionUpdateOrder.UpdatePhase updatePhase)
@@ -44,6 +49,7 @@ public class twoHandedGrab : XRGrabInteractable
         if (secondInteractor && selectingInteractor)
         {
             selectingInteractor.attachTransform.rotation = GetTwoHandRotation();
+            //GrowObject();
         }
 
         base.ProcessInteractable(updatePhase);
@@ -74,7 +80,6 @@ public class twoHandedGrab : XRGrabInteractable
         dropDist = Vector3.Distance(firstHand.transform.position, secondHand.transform.position);
         float newScaleMod = dropDist / initDist;
         Debug.Log(newScaleMod);
-        Vector3 newScale = new Vector3(transform.localScale.x + newScaleMod, transform.localScale.y + newScaleMod, transform.localScale.z + newScaleMod);
         transform.localScale = transform.localScale * newScaleMod;
     }
 
