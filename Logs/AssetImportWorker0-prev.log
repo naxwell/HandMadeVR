@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2020.3/staging' branch; Version is '2020.3.18f1 (a7d1c678663c) revision 10998214'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Home; OS build 19042.1288; Version 2009; 64bit' Language: 'en' Physical Memory: 32699 MB
+OS: 'Windows 10 Home; OS build 19042.1348; Version 2009; 64bit' Language: 'en' Physical Memory: 32699 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
 COMMAND LINE ARGUMENTS:
@@ -15,12 +15,12 @@ E:/Unity Projects/HandMadeVR
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-59397
+50590
 Successfully changed project path to: E:/Unity Projects/HandMadeVR
 E:/Unity Projects/HandMadeVR
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 59.00 ms, found 6 plugins.
-Preloading 1 native plugins for Editor in 1.08 ms.
+Refreshing native plugins compatible for Editor in 61.34 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 1.07 ms.
 Initialize engine version: 2020.3.18f1 (a7d1c678663c)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.18f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path E:/Unity Projects/HandMadeVR/Assets
@@ -36,37 +36,37 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.18f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.18f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.18f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56128
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56032
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.18f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002066 seconds.
+Registered in 0.002867 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 46.50 ms, found 6 plugins.
-Preloading 1 native plugins for Editor in 0.03 ms.
+Refreshing native plugins compatible for Editor in 46.36 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.608 seconds
+- Completed reload, in  1.666 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1608ms)
-		BeginReloadAssembly (52ms)
+	ReloadAssembly (1667ms)
+		BeginReloadAssembly (54ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (352ms)
-			LoadAssemblies (49ms)
+		EndReloadAssembly (348ms)
+			LoadAssemblies (51ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (123ms)
+			SetupTypeCache (119ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (26ms)
+			RebuildScriptCaches (25ms)
 			SetupLoadedEditorAssemblies (147ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
+				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (47ms)
-				BeforeProcessingInitializeOnLoad (10ms)
-				ProcessInitializeOnLoadAttributes (64ms)
+				BeforeProcessingInitializeOnLoad (11ms)
+				ProcessInitializeOnLoadAttributes (63ms)
 				ProcessInitializeOnLoadMethodAttributes (22ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
@@ -74,41 +74,41 @@ Domain Reload Profiling:
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.005218 seconds.
+Registered in 0.005328 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 46.08 ms, found 6 plugins.
-Preloading 1 native plugins for Editor in 0.03 ms.
+Refreshing native plugins compatible for Editor in 46.82 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.04 ms.
 [XR] OculusXRPlugin: registering subsystems
 [XR] Unable to register display lifecyle provider: [1]
 [XR] Oculus Input lifecycle provider registered.
 [XR] Unable to register input lifecyle provider: [1]
 [XR] OVRP version 1.65.0
 Mono: successfully reloaded assembly
-- Completed reload, in  0.993 seconds
+- Completed reload, in  0.966 seconds
 Domain Reload Profiling:
-	ReloadAssembly (994ms)
-		BeginReloadAssembly (124ms)
+	ReloadAssembly (967ms)
+		BeginReloadAssembly (120ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (16ms)
-		EndReloadAssembly (817ms)
-			LoadAssemblies (91ms)
+		EndReloadAssembly (797ms)
+			LoadAssemblies (87ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (260ms)
-			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (46ms)
-			SetupLoadedEditorAssemblies (323ms)
+			SetupTypeCache (245ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (45ms)
+			SetupLoadedEditorAssemblies (317ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
+				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (46ms)
-				BeforeProcessingInitializeOnLoad (61ms)
-				ProcessInitializeOnLoadAttributes (196ms)
-				ProcessInitializeOnLoadMethodAttributes (9ms)
-				AfterProcessingInitializeOnLoad (7ms)
+				RefreshPlugins (47ms)
+				BeforeProcessingInitializeOnLoad (60ms)
+				ProcessInitializeOnLoadAttributes (189ms)
+				ProcessInitializeOnLoadMethodAttributes (10ms)
+				AfterProcessingInitializeOnLoad (6ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (5ms)
@@ -117,14 +117,14 @@ Platform modules already initialized, skipping
 Worker process is ready to serve import requests
 Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.65 ms, found 6 plugins.
-Preloading 1 native plugins for Editor in 0.03 ms.
+Refreshing native plugins compatible for Editor in 0.64 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.04 ms.
 Unloading 2530 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 115.6 MB.
 System memory in use after: 115.8 MB.
 
 Unloading 44 unused Assets to reduce memory usage. Loaded Objects now: 2953.
-Total: 2.669100 ms (FindLiveObjects: 0.208600 ms CreateObjectMapping: 0.090900 ms MarkObjects: 2.289000 ms  DeleteObjects: 0.079800 ms)
+Total: 3.018900 ms (FindLiveObjects: 0.230100 ms CreateObjectMapping: 0.078900 ms MarkObjects: 2.630200 ms  DeleteObjects: 0.078900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -139,97 +139,41 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Model/MPS Team Models
-  artifactKey: Guid(4631ec01172a08742ae2aa0984828526) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/MPS Team Models using Guid(4631ec01172a08742ae2aa0984828526) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ecabed740588b36f3b265051ecbe9435') in 0.005907 seconds 
-  Import took 0.008918 seconds .
+  path: Assets/Model/rock.fbx
+  artifactKey: Guid(57abeb90c3a06c048bcca1431d021077) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Model/rock.fbx using Guid(57abeb90c3a06c048bcca1431d021077) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3aa551381360f770df53593502e4fcba') in 0.141430 seconds 
+  Import took 0.146482 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 21.782260 seconds.
-  path: Assets/Model/MPS Team Models/Deco building tower 1.fbx
-  artifactKey: Guid(9efc4e2a06267de4cb0a82c47e50de04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/MPS Team Models/Deco building tower 1.fbx using Guid(9efc4e2a06267de4cb0a82c47e50de04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b436973b07e98c1de0085b50a7984a3e') in 0.132087 seconds 
-  Import took 0.138001 seconds .
+  Time since last request: 13.504905 seconds.
+  path: Assets/Model/rock.fbx
+  artifactKey: Guid(57abeb90c3a06c048bcca1431d021077) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Model/rock.fbx using Guid(57abeb90c3a06c048bcca1431d021077) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05ba4fec743c06caec80e8c1d624eb5b') in 0.015647 seconds 
+  Import took 0.020934 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 7.000168 seconds.
-  path: Assets/Model/MPS Team Models/Deco building tower 1.fbx
-  artifactKey: Guid(9efc4e2a06267de4cb0a82c47e50de04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/MPS Team Models/Deco building tower 1.fbx using Guid(9efc4e2a06267de4cb0a82c47e50de04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d65f1852f8c1890d3ee5ecaf0c5ccee') in 0.023398 seconds 
-  Import took 0.027042 seconds .
+  Time since last request: 84.192803 seconds.
+  path: Assets/Model/kylienovrockcave.fbx
+  artifactKey: Guid(6a59de0ea2e9fbf41bb551500cde0042) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Model/kylienovrockcave.fbx using Guid(6a59de0ea2e9fbf41bb551500cde0042) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cde600c31fe3d6acb82c01374b60052c') in 0.016958 seconds 
+  Import took 0.023843 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 232.683377 seconds.
-  path: Assets/Model/MPS Team Models/low poly brazier.fbx
-  artifactKey: Guid(8653a6734853a5348af50842eecd2dba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/MPS Team Models/low poly brazier.fbx using Guid(8653a6734853a5348af50842eecd2dba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2226b25a7cabe8c10f27a838e2fe85a') in 0.051963 seconds 
-  Import took 0.058518 seconds .
+  Time since last request: 6.353554 seconds.
+  path: Assets/Model/kylienovrockcave.fbx
+  artifactKey: Guid(6a59de0ea2e9fbf41bb551500cde0042) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Model/kylienovrockcave.fbx using Guid(6a59de0ea2e9fbf41bb551500cde0042) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf8d3ccda8429f1772c292503fb1e2a4') in 0.015718 seconds 
+  Import took 0.020948 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 9.681457 seconds.
-  path: Assets/Model/MPS Team Models/low poly brazier.fbx
-  artifactKey: Guid(8653a6734853a5348af50842eecd2dba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/MPS Team Models/low poly brazier.fbx using Guid(8653a6734853a5348af50842eecd2dba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3391f6859bf139f66501bfccb98edab') in 0.038696 seconds 
-  Import took 0.042333 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.571777 seconds.
-  path: Assets/Model/MPS Team Models/low poly brazier.fbx
-  artifactKey: Guid(8653a6734853a5348af50842eecd2dba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/MPS Team Models/low poly brazier.fbx using Guid(8653a6734853a5348af50842eecd2dba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b481e2c64294e704fdebd9bb042cc028') in 0.025390 seconds 
-  Import took 0.028632 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 47.897426 seconds.
-  path: Assets/Model/MPS Team Models/shrine circle.fbx
-  artifactKey: Guid(2e7bc426eabbfb7449bb921afac7b571) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/MPS Team Models/shrine circle.fbx using Guid(2e7bc426eabbfb7449bb921afac7b571) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd79ca2ea6d4f8c1c860bf530c52663a8') in 0.073427 seconds 
-  Import took 0.079946 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.487961 seconds.
-  path: Assets/Model/MPS Team Models/shrine circle.fbx
-  artifactKey: Guid(2e7bc426eabbfb7449bb921afac7b571) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/MPS Team Models/shrine circle.fbx using Guid(2e7bc426eabbfb7449bb921afac7b571) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '960cba4c73075640ed0f37169247bb34') in 0.062500 seconds 
-  Import took 0.067349 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.968061 seconds.
-  path: Assets/Model/MPS Team Models/shrine circle.fbx
-  artifactKey: Guid(2e7bc426eabbfb7449bb921afac7b571) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/MPS Team Models/shrine circle.fbx using Guid(2e7bc426eabbfb7449bb921afac7b571) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '203c22d0e85fcf61f67ce4aca3505a45') in 0.048434 seconds 
-  Import took 0.053080 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 19.130078 seconds.
-  path: Assets/Model/MPS Team Models/shrine circle.fbx
-  artifactKey: Guid(2e7bc426eabbfb7449bb921afac7b571) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/MPS Team Models/shrine circle.fbx using Guid(2e7bc426eabbfb7449bb921afac7b571) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '264626d3f6cae94a83037f76ea84401f') in 0.046914 seconds 
-  Import took 0.052321 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.612546 seconds.
-  path: Assets/Model/MPS Team Models/low poly brazier.fbx
-  artifactKey: Guid(8653a6734853a5348af50842eecd2dba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/MPS Team Models/low poly brazier.fbx using Guid(8653a6734853a5348af50842eecd2dba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3d07f37be0d0b68e2d0c18da203f80e') in 0.026738 seconds 
-  Import took 0.031194 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 48.051732 seconds.
-  path: Assets/Model/MPS Team Models/low poly brazier.fbx
-  artifactKey: Guid(8653a6734853a5348af50842eecd2dba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Model/MPS Team Models/low poly brazier.fbx using Guid(8653a6734853a5348af50842eecd2dba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d7f6d31ccc3f6ba8f8bbf12adf4930d') in 0.027413 seconds 
-  Import took 0.031930 seconds .
+  Time since last request: 17.250078 seconds.
+  path: Assets/Model/MeshLayer_Mesh_BaseColor(2).png
+  artifactKey: Guid(8afdba4c880bb944fb2fa24e5a678657) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Model/MeshLayer_Mesh_BaseColor(2).png using Guid(8afdba4c880bb944fb2fa24e5a678657) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfb6a85ca0d9bee6ed28dbc42cb169d7') in 0.041160 seconds 
+  Import took 0.046538 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
